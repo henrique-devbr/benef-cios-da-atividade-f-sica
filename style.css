@@ -14,7 +14,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 .contaimer {
@@ -57,8 +56,9 @@ header{
 }
 
 nav{
-    display: block;
+    display: flex;
     unicode-bidi: isolate;
+    height: 8vh;
 }
 
 nav > a{
