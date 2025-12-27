@@ -43,8 +43,7 @@
 
 header{
     background-image: linear-gradient(to bottom,#025E73, #011f26e5);
-    min-width: 500px;
-    max-width: 1000px;
+    min-width: 300px;
     padding-top: 20px;
     width: 100%;
     box-sizing: border-box;
@@ -93,6 +92,7 @@ body{
     margin: 0;
 }
 article{
+    margin: auto;
 }
 article h2{
     color: var(--cor1);
@@ -106,13 +106,12 @@ article h3{
     color: #ffffff;
 }
 main{
-    min-width: 400px;
+    min-width: 500;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
 }
 main img.pequena{
-    width: 100%;
     display: block;
     max-width: 450px;
     margin: 0 auto;
