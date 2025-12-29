@@ -1,0 +1,62 @@
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        padding: 15px 0;
+    }
+
+    header .menu-desktop {
+        display: none;
+    }
+
+    /* HERO */
+    section.hero-site {
+        height: auto;
+        padding: 120px 0 60px 0;
+    }
+
+    .hero-site .interface {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-site .txt-hero h1 {
+        font-size: 2.2em;
+        line-height: 40px;
+    }
+
+    .hero-site .txt-hero p {
+        font-size: 16px;
+    }
+
+    /* VANTAGENS */
+    .vantagens .itens-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vantagens .itens-container .txt-itens h3 {
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    /* CONTATO */
+    .txt-contato,
+    .icons-contato {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .contato .icons-contato button {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    /* CURIOSIDADES */
+    section.curiosidades {
+        height: auto;
+        padding: 80px 0;
+        background-attachment: scroll;
+    }
+}

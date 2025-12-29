@@ -1,0 +1,512 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --cor0: #011F26;
+    --cor1: #025E73;
+    --cor2: #F2A71B;
+    --cor3: #A5A692;
+    --cor4: #BFB78F;
+    --cor5: #03A678;
+    --cor6: #0e0c0c;
+    --cor7: #171717;
+    --cor8: #a8a29e;
+    --cor9: #f5f5f5;
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap');
+
+body{
+    background-color: #E3E3E3;
+}
+
+/* ========================= */
+/* 📱 CELULAR */
+/* ========================= */
+@media (max-width: 480px) {
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 10px;
+    }
+}
+
+/* ========================= */
+/* 📱 TABLET */
+/* ========================= */
+@media (max-width: 768px) {
+
+    nav {
+    flex-direction: column;
+    }
+
+    .cards {
+    flex-direction: column;
+    }
+}
+
+/* ========================= */
+/* 💻 NOTEBOOK */
+/* ========================= */
+@media (max-width: 1024px) {
+
+    .container {
+    padding: 15px;
+    }
+}
+
+/* TEXTO RESPONSIVO AUTOMÁTICO */
+h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+h2 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+}
+
+header .btn-contato button, .hero-site button, .curiosidades button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 999999;
+}
+
+header .btn-contato button:hover, .hero-site button:hover, .curiosidades button:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 150px;
+}
+
+header{
+    width: 100%;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    transform: .6;
+}
+
+header .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img{
+    max-width: 40px;
+}
+
+/* estilo do menu dinamico */
+
+header .logo img.logo-preta{
+    display: none;
+}
+
+header.rolar{
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 0 9px #0000007e;
+}
+
+header.rolar .menu-desktop nav ul li a{
+    color: #000;
+}
+
+header.rolar .btn-contato button{
+    border: 1px solid black;
+    color: #000;
+
+}
+
+header.rolar .btn-contato button:hover{
+    background-color: #000;
+    color: #ffffff;
+}
+
+header.rolar .logo .logo-branca{
+    display: none;
+}
+
+header.rolar .logo .logo-preta{
+    display: block;
+}
+
+/* ------------------- */
+
+header .menu-desktop nav ul{
+    list-style-type: none;
+
+}
+
+header .menu-desktop nav ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.4s;
+}
+
+.menu-desktop nav a:hover{
+    transform: scale(1.05);
+}
+
+/* estilo do hero */
+section.hero-site{
+    height: 90vh;
+    background-image: url(../imagens/paisagem.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.hero-site .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1{
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+}
+
+.txt-hero h1 span{
+    display: block;
+    font-weight: 800;
+}
+.hero-site .txt-hero p{
+    font-size: 20px;
+    font-weight: 200;
+    margin: 20px 0;
+}
+
+.hero-site .txt-hero p span{
+    display: block;
+}
+
+/* estilo das  vantagens*/
+section.vantagens{
+    padding: 80px 0;
+}
+
+.vantagens .itens-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.vantagens .itens-container .img-itens img{
+    max-width: 410px;
+}
+
+.vantagens .itens-container .txt-itens h3{
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.itens-container .txt-itens h3 span{
+    font-weight: 300;
+}
+/* estilo dos botões de contato */
+section.contato{
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.txt-contato, .icons-contato{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.contato .txt-contato h3{
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.contato .icons-contato a{
+    text-decoration: none;
+}
+.contato .icons-contato button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    padding: 0 60px;
+
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #000;
+    transition: 0.6s;
+}
+
+.contato .icons-contato button i{
+    font-size: 20px;
+}
+
+.contato .icons-contato button:hover{
+    background-color: #000000;
+}
+
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p {
+    color: #ffffff;
+}
+
+/* estilo da sessão curiosidade */
+section.curiosidades{
+    height: 600px;
+
+    background-image: url(../imagens/curiosidade.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+}
+
+.curiosidades > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000083;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.curiosidades > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.curiosidades h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+.curiosidades h3 span{
+    display: block;
+    font-weight: 600;
+}
+
+.hoteis p{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.curiosidades button{
+    width: 220px;
+    height: 60px;
+}
+
+.curiosidades button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+footer{
+    font-family: 'inter', sans-serif;
+    width: 100%;
+    color: var(--cor9);
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--cor7);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--cor9);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807); 
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--cor8);
+    transition: all 0.7s;
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: var(--cor8);
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: 4px;
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #7f37c9;
+    border: none;
+    color: var(--cor9);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display:flex;
+    justify-content: center;
+    background-color: var(--cor6);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: 1fr;
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+
+    #footer_social_media {
+        justify-content: center;
+    }
+
+    #footer_contacts,
+    .footer-list,
+    #footer_subscribe {
+        align-items: center;
+    }
+
+    #input_group {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
