@@ -1,62 +1,80 @@
-@media (max-width: 768px) {
 
-    /* HEADER */
-    header {
-        padding: 15px 0;
-    }
-
-    header .menu-desktop {
+@media screen and (max-width: 900px){
+    header .menu-desktop, header .btn-contato{
         display: none;
     }
+}
 
-    /* HERO */
-    section.hero-site {
-        height: auto;
-        padding: 120px 0 60px 0;
+@media screen and (max-width: 878px){
+    /* responsivo da hero */
+
+    .hero-site .txt-hero h1{
+        font-size: 2.6em;
+        line-height: 45px;
     }
 
-    .hero-site .interface {
+    .hero-site .txt-hero p{
+        font-size: 14px;
+    }
+
+    .hero-site .txt-hero p span{
+        display: inline;
+    }
+
+    /* responsive vantagens */
+
+
+    .vantagens .itens-container{
+
         flex-direction: column;
-        text-align: center;
     }
 
-    .hero-site .txt-hero h1 {
-        font-size: 2.2em;
-        line-height: 40px;
+    .vantagens .itens-container .img-itens img{
+        width: 100%;
     }
 
-    .hero-site .txt-hero p {
-        font-size: 16px;
+    .vantagens .itens-container .txt-itens p{
+        margin-bottom: 20px;
     }
 
-    /* VANTAGENS */
-    .vantagens .itens-container {
-        flex-direction: column;
-        text-align: center;
+    .vantagens .itens-container .item-1{
+        order: 1;
+    }
+    .vantagens .itens-container .item-2{
+        order: 0;
     }
 
-    .vantagens .itens-container .txt-itens h3 {
+    /* responsive do contato */
+
+    .txt-contato, .icons-contato{
+        display: block;
+        width: 100%;
+    }
+
+    .contato .txt-contato h3{
         font-size: 2em;
         line-height: 40px;
     }
 
-    /* CONTATO */
-    .txt-contato,
-    .icons-contato {
+    .contato .txt-contato p{
+        margin-bottom: 20px;
+    }
+
+    .contato .icons-contato button{
         width: 100%;
-        display: block;
-        text-align: center;
     }
 
-    .contato .icons-contato button {
-        width: 90%;
-        padding: 0 20px;
-    }
+    /* reponsive da curiosidade */
 
-    /* CURIOSIDADES */
-    section.curiosidades {
-        height: auto;
-        padding: 80px 0;
-        background-attachment: scroll;
-    }
+.curiosidades h3{
+    font-size: 2.3em;
+    line-height: 40px;
+}
+
+
+.hoteis p{
+    margin: 20px 0;
+    font-size: 16px;
+}
+
 }
